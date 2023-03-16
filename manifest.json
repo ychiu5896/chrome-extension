@@ -1,0 +1,25 @@
+{
+	"manifest_version": 3,
+	"name": "Fox Clicker",
+	"version": "1.0",
+	"description": "This extension displays foxes",
+
+  "action": {
+    "browser_style": true,
+    "default_icon": "fox.png",
+    "default_title": "Fox-Click"
+  },
+
+  "icons": {
+    "48": "fox.png"
+  },
+
+  "author": "YC and Gary",
+	
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["main.js"]
+		}
+	]
+}
